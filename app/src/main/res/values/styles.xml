@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">#2690E4</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="buttons_style_escuro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">#176CAF</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="buttons_style_laranja">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">#FFB343</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="buttons_style_cinza">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="backgroundTint">#7C7C7C</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+</resources>

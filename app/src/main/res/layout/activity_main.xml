@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="visor"
+            type="com.example.calculadorasimplesteste.Visor" />
+    </data>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:gravity="center_vertical|end"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tela"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="end"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="bottom|right"
+            android:text="@={visor.resultado}"
+            android:textSize="85sp"
+            android:maxLines="1"
+              />
+
+    </HorizontalScrollView>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_below="@id/horizontalScroll"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0,1,2,3"
+            tools:context=".MainActivity">
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button_ac"
+                    style="@style/buttons_style_laranja"
+                    android:layout_column="0"
+                    android:layout_span="2"
+                    android:text="@string/ac" />
+
+                <Button
+                    android:id="@+id/button_resto"
+                    style="@style/buttons_style_escuro"
+                    android:layout_column="0"
+                    android:text="@string/resto" />
+
+                <Button
+                    android:id="@+id/button_divisao"
+                    style="@style/buttons_style_escuro"
+                    android:layout_column="0"
+                    android:text="@string/divisao" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/buttons_style"
+                    android:layout_column="0"
+
+                    android:text="@string/_7" />
+
+                <Button
+
+                    android:id="@+id/button8"
+                    style="@style/buttons_style"
+                    android:layout_column="0"
+                    android:text="@string/_8" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/buttons_style"
+                    android:layout_column="2"
+                    android:text="@string/_9" />
+
+                <Button
+                    android:id="@+id/button_vezes"
+                    style="@style/buttons_style_escuro"
+                    android:layout_column="3"
+                    android:text="@string/vezes"
+                    android:textAllCaps="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/buttons_style"
+                    android:text="@string/_4" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/buttons_style"
+                    android:text="@string/_5" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/buttons_style"
+                    android:text="@string/_6" />
+
+                <Button
+                    android:id="@+id/button_menos"
+                    style="@style/buttons_style_escuro"
+                    android:text="@string/menos" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/buttons_style"
+                    android:text="@string/_1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/buttons_style"
+                    android:text="@string/_2" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/buttons_style"
+                    android:text="@string/_3" />
+
+                <Button
+                    android:id="@+id/button_mais"
+                    style="@style/buttons_style_escuro"
+                    android:text="@string/mais" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/buttons_style"
+                    android:layout_span="2"
+                    android:text="@string/_0" />
+
+                <Button
+                    android:id="@+id/button_virgula"
+                    style="@style/buttons_style"
+                    android:text="@string/virgula" />
+
+                <Button
+                    android:id="@+id/button_igual"
+                    style="@style/buttons_style_cinza"
+                    android:text="@string/igual" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </RelativeLayout>
+</layout>
